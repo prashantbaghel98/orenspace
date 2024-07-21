@@ -1,0 +1,643 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+/* Video Hide CSS */
+
+video::-webkit-media-controls {
+    display: none;
+  }
+  
+  /* Could Use thise as well for Individual Controls */
+  video::-webkit-media-controls-play-button {}
+  
+  video::-webkit-media-controls-volume-slider {}
+  
+  video::-webkit-media-controls-mute-button {}
+  
+  video::-webkit-media-controls-timeline {}
+  
+  video::-webkit-media-controls-current-time-display {}
+
+
+
+/* Universal CSS */
+
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family:"Poppins", sans-serif;;
+   
+    
+}
+
+h1{
+    font-size: 25px;
+}
+
+h2{
+    font-size:20px;
+    padding: 0%;
+}
+
+p{
+    font-size: 15px;
+}
+
+
+.flex{
+    display: flex;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+}
+
+:root {
+    --blue: #1e90ff;
+    --white: #ffffff;
+}
+
+
+.btnn{
+    background-color: rgb(2, 123, 174);
+    color: white;
+    padding: 10px;
+    display: inline;
+    border-radius: 10px;
+    font-size: 15px;
+    margin: 5px;
+    border: 0px;
+}
+
+.btnn:hover{
+    background-color: black;
+}
+
+
+
+/* NavBar */
+
+.toggle-button{
+    visibility: hidden;
+}
+
+
+.mobile-navmenu img{
+    visibility: hidden;
+}
+
+nav{
+    
+    background-color: rgb(0, 0, 0);
+    color: white;
+    width: 100vw;
+    justify-content: space-between;
+    height: 60px;
+    
+}
+
+/* NavBar Logo */
+
+.navlogo{
+   padding: 10px;
+
+}
+
+.navlogo img{
+    
+    height: 6vh;
+    padding: 0px;
+    
+    margin-left: 20px;
+
+
+}
+
+/* NavBar Menu */
+
+
+.navmenu{
+    margin-right: 2%;
+    padding: 10px;
+}
+
+nav ul{
+    list-style: none;
+    
+}
+
+nav li{
+    padding: 10px; 
+}
+
+
+nav a{
+    text-decoration: none;
+    
+color: white;
+}
+
+
+/* Section-1 */
+
+.section-1{
+    
+    width: 100vw;
+    height: 550px;
+    
+}
+
+.section-1 video{
+    position: absolute; 
+    float: left; 
+    z-index: -1; 
+    width: 100vw;
+    height: 550px;
+    filter: brightness(40%);
+   object-fit: fill;
+}
+
+
+
+.section-1-left{
+padding: 10%;
+width: 60%;
+
+}
+
+
+.section-1-left h2{
+    color: white;
+    font-size: 35px;
+    
+}
+
+.section-1-left p{
+    color: white;
+    margin-top: 5%;
+    font-size: 20px;
+    
+}
+
+.section-1-right{
+    width: 30%;
+
+}
+
+
+
+.section-1-right form{
+    background-color: white;
+    height: 40vh;
+    width: 20vw;
+    margin-top: 20%;
+    text-align: center;
+    padding-top: 5%;
+    border-radius: 20px;
+    margin-left: 35%;
+}
+
+.section-1-right input{
+    margin: 1vh;
+    border: 2px solid black;
+    border-radius: 10vh;
+    padding-left: 1vw;
+}
+
+.section-1-right p{
+    font-weight: 600;
+    font-size: 20px;
+    margin-top: 2vh;
+}
+
+
+
+/* Section-2 */
+
+.section-2{
+    
+    padding-left: 20%;
+    padding-right: 20%;
+    padding-top: 5% ;
+    padding-bottom: 5% ;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.section-2 img{
+    height: 50px;
+    
+}
+
+
+/* Section-3 */
+
+.section-3 {
+    background-color: rgb(72, 30, 20);
+    color: white;
+    text-align: center;
+    padding: 5% 25%;
+}
+
+
+/* Section-4 */
+
+.counter-container {
+    display: flex;
+    justify-content: space-around;
+    padding: 5% 10%;
+    background-color: black;
+    color: white;
+}
+.counter {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+
+/* Section-5 */
+
+.section-5{
+    background-color: rgb(242, 97, 63);
+    padding: 3% 5%;
+
+}
+
+.section-5-image img{
+
+    height: 50vh;
+    width: 40vw;
+    border-radius: 30px;
+
+}
+
+.section-5-text{
+    text-align: center;
+    padding: 10% 8%;
+    color: white;
+   
+}
+
+
+/* Section-6 */
+
+
+.section-6{
+    text-align: center;
+    padding: 5% 0%;
+}
+
+
+.trusted-partner-logo{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    justify-content: center;
+    gap: 5%;
+}
+
+.partner-logo img{
+    height: 10vh;
+}
+
+
+/* Section-7 */
+
+.section-7{
+    text-align: center;
+    background-color: rgb(72, 30, 20);
+    padding: 5% 8%;
+    color: white;
+}
+
+.section-7 h2{
+   padding-bottom: 1%;
+}
+
+.route-container{
+    gap: 2%;  
+   padding: 0% 0%;
+    
+    
+    
+}
+
+.step{
+    border: 2px solid black;
+    background-color: white;
+    padding: 1%;
+    border-radius: 20px;
+    color: black;
+    width: 100%;
+    margin: 0% 2%;
+    
+}
+
+.step img{
+    height: 8vh;
+   padding-bottom: 5%;
+}
+
+.section-7 button{
+
+    padding: 1%;
+    margin-top: 3%;
+
+}
+
+
+
+
+
+/* Section-8 */
+
+
+.section-8{
+    background-color: rgb(242, 97, 63);
+    padding: 2% 5%;
+    text-align: center;
+   
+}
+
+
+/* Section-9 */
+
+
+.footer-widget{
+    background-color: black;
+    color: white;
+}
+
+.about-site{
+    width: 50%;
+    padding: 2%;
+    text-align: center;
+}
+
+.about-site p{
+    padding: 0% 25%;
+    text-align: justify;
+}
+
+.footer-logo img{
+    width: 20vw;
+    padding: 2%;
+}
+
+.footer-location{
+    border-radius: 50px;
+    padding: 2%;
+}
+
+.footer-location iframe{
+    width: 50vw;
+    border-radius: 50px;
+}
+
+
+
+/* Mobile Responsive */
+
+@media only screen and (max-width: 600px) {
+   
+    /* NavBar */
+
+    .toggle-button{
+        visibility: visible;
+        padding: 2%;
+        margin: 2%;
+        border: 0px;
+        height: 80%;
+        width: 100%;
+        margin-left: 18%;
+        filter: invert();
+    }
+    
+    .toggle-button img{
+        height: 80%;
+
+    }
+    
+    
+
+    .mobile-navmenu img{
+        visibility: visible;
+        height: 5vh;
+        filter: invert();
+        margin: 2vh 10vh;
+        cursor:grab ;
+    }
+    
+    .mobile-menu-toggle{
+        background-color: black;
+        color: white;
+        list-style: none;
+        
+    }
+
+    .mobile-menu-toggle li{
+padding: 1%;
+    }
+    
+    .mobile-menu-toggle a{
+      padding-left: 5%;
+        
+       text-decoration: none;
+       color: white;
+    }
+
+
+
+
+    /* Section-1 */
+
+    html, body {
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+
+    .mobile-menu{
+        visibility:hidden;
+    }
+
+    section-1-left{
+        
+    }
+.section-1{
+    display: block;
+    width: 100%;
+    height: 80vh;
+}
+
+
+.section-1 video{
+    height: 80vh;
+    width: 100wh;
+}
+
+
+.section-1-left{
+    width: 100%;
+    padding: 9% 2%;
+    
+    
+}
+
+.section-1-left h2{
+    font-size: 20px;
+    width: 100%;
+}
+
+.section-1-left p{
+    font-size: 15px;
+    width: 100%;
+}
+
+
+.section-1-right form{
+    width: 200%;
+    margin: 25% 65%;
+    
+}
+
+/* Section-2 */
+
+.section-2{
+    text-align: center;
+    padding: 5%;
+    gap: 10%;
+}
+
+    
+/* Section-3 */
+
+.section-3{
+    padding: 10% 0%;
+}
+
+.section-3 h2{
+    width: 100vw;
+    padding: 2%;
+
+}
+
+/* Section-4 */
+
+.counter{
+    text-align: center;
+
+}
+
+
+/* Section-5 */
+
+.section-5{
+    display: grid;
+}
+
+.section-5-image img{
+    margin-top: 2%;
+height: 100%;
+width: 100%;
+}
+
+.section-5-text{
+    padding: 5% 0%;
+}
+
+
+/* Section-6 */
+
+.partner-logo{
+    height: 8vh;
+
+}
+
+.partner-logo img{
+    height: 5vh;
+}
+
+/* Section-7 */
+
+.section-7{
+    height: 140vh
+}
+
+.route-container{
+    display: grid;
+}
+
+.step{
+    width: auto;
+    height: 20vh;
+    padding: 5% 0%;
+}
+    .section-7 button{
+
+      margin-top: 30%;
+      font-size: 25px;
+
+    }
+
+/* Section-8 */
+
+.section-8{
+    height: 50vh;
+}
+
+
+.section-8 h2{
+    padding-top: 10%;
+}
+
+/* Section-9 */
+
+.footer-widget{
+    display: grid;
+    background-color: black;
+    color: white;
+}
+
+.footer-logo{
+    width: 100vw;
+    text-align: center;
+}
+
+.about-site img{
+    width: 50vw;
+    padding: 2% 0%;
+}
+
+.about-site{
+    width: 100%;
+}
+
+.about-site p{
+padding: 5%;
+}
+
+.footer-location{
+    width: 100vw;
+    text-align: center;
+}
+
+.footer-location iframe{
+    width: 90%;
+    padding-right: 1%;
+    height: 35vh;
+    border-radius: 60px;
+    border: 5px solid black;
+}
+
+
+
+
+
+  }
